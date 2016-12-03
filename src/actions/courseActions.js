@@ -1,6 +1,3 @@
-/**
- * Created by todd.isaacs on 11/22/16.
- */
 import * as types from './actionTypes';
 import courseApi from '../api/mockCourse';
 
