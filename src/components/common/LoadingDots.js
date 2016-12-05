@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react'
+import React, {PropTypes} from 'react';
 
 class LoadingDots extends React.Component {
 	constructor(props, context) {
@@ -9,10 +9,10 @@ class LoadingDots extends React.Component {
 
 	componentDidMount() {
     this.interval = setInterval(() => {
-        this.setState({
+        this.setState({ // eslint-disable-line react/no-did-mount-set-state
           frame: this.state.frame + 1
         });
-    }, this.props.interval)
+    }, this.props.interval);
   }
 
   componentWillUnmount() {

@@ -26,7 +26,8 @@ const CourseList = ({courses, deleteCourse}) => {
 };
 
 CourseList.propTypes = {
-  courses: PropTypes.array.isRequired
+  courses: PropTypes.array.isRequired,
+  deleteCourse: PropTypes.func
 };
 
 export default CourseList;
