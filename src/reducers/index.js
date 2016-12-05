@@ -1,13 +1,13 @@
-/**
- * Created by todd.isaacs on 11/22/16.
- */
+
 import {combineReducers} from 'redux';
 import courses from './courseReducer';
 import authors from './authorReducer';
+import ajaxCallsInProgress from './ajaxStatusReducer';
 
 const rootReducer = combineReducers({
   courses,
-  authors
+  authors,
+  ajaxCallsInProgress
 });
 
 export default rootReducer;
